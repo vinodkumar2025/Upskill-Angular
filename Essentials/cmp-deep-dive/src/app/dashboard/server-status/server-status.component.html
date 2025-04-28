@@ -1,5 +1,5 @@
 <app-dashboard-item [image]="image" [title]="title">
-    <div>
+    <div [class]="{status:true, online: currentStatus === 'online', offline: currentStatus === 'offline', unknown: currentStatus === 'unknown'}">
         @if (currentStatus === 'online') {
           <p>Servers are online</p>
           <p>All systems are operational.</p>
