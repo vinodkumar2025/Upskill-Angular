@@ -14,17 +14,15 @@ import { TicketData } from '../ticket.model';
 export class NewTicketComponent {
   @ViewChild('form') form!: ElementRef<HTMLFormElement>
   @Output()  ticketCreated = new EventEmitter<TicketData>();
-  ticket?:TicketData;
 
   onSubmit(){
     const formData = new FormData(this.form.nativeElement);
     const ticket = {
       id: Math.random().toString(36).substring(2, 9),
-      title: formData.get('title') as string,
-      request: formData.get('request') as string,
+      title: formData.get('title')as string,
+      request: formData.get('request')as string,
       status: 'open' as 'open' | 'closed'
     }
-    this.ticket = ticket;
     this.ticketCreated.emit(ticket);
     this.form.nativeElement.reset();
   }

@@ -19,4 +19,12 @@ export class TicketsComponent {
   addTicket(ticket: { id: string; title: string; request: string; status: 'open' | 'closed'; }) {
     this.tickets.push(ticket);
   }
+  onCompleteTicket(id: string) {
+    this.tickets.map(t => {
+      if (t.id === id) {
+        t.status = 'closed';
+      }
+      return t;
+    })
+  }
 }

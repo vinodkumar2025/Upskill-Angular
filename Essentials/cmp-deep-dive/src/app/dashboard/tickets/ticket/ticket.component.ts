@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-ticket',
@@ -8,5 +8,15 @@ import { Component, Input } from '@angular/core';
   styleUrl: './ticket.component.css'
 })
 export class TicketComponent {
-  @Input() ticket!: any;
+  @Input() ticket!: { id: string; title: string; request: string; status: 'open' | 'closed' };
+  @Output() completeTicket = new EventEmitter();
+  visibleDetails = false;
+
+  toggleDetails() {
+    this.visibleDetails = !this.visibleDetails;
+  }
+
+  markAsComplete(){
+    this.completeTicket.emit(this.ticket.id);
+  }
 }
