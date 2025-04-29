@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './ticket.component.css'
 })
 export class TicketComponent {
-  @Input() ticket!: { id: string; title: string; request: string; status: 'open' | 'closed' };
+  @Input() ticket!: any;
 }
