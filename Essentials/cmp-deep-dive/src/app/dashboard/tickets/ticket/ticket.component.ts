@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-ticket',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './ticket.component.css'
 })
 export class TicketComponent {
-
+  @Input() ticket!: { id: string; title: string; request: string; status: 'open' | 'closed' };
 }

@@ -1,5 +1,16 @@
-<app-dashboard-item [image]="image" [title]="title">
-    <div id="status">
-        <app-new-ticket></app-new-ticket>
-    </div>
-</app-dashboard-item>
+<div id="status">
+    <ul>
+        @for(ticket of tickets; track ticket.id) {
+            <li>
+                <app-ticket [ticket]="ticket"></app-ticket>
+            </li>
+        }@empty {
+            <li>No tickets available</li>
+        }
+    </ul>
+    <app-dashboard-item [image]="image" [title]="title">
+        <div >
+            <app-new-ticket (ticketCreated)="addTicket($event)"></app-new-ticket>
+        </div>
+    </app-dashboard-item>
+</div>

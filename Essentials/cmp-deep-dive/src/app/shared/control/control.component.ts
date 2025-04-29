@@ -1,4 +1,4 @@
-import { Component, HostListener, Input, ViewEncapsulation } from '@angular/core';
+import { Component, ContentChild, HostListener, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-control',
@@ -14,6 +14,7 @@ import { Component, HostListener, Input, ViewEncapsulation } from '@angular/core
 })
 export class ControlComponent {
   @Input({required: true}) label!: string;
+  @ContentChild('input') input!: HTMLInputElement;
 
   @HostListener('click')
   onClick(){
