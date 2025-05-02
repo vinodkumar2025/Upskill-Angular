@@ -1,19 +1,20 @@
-<form>
+<form [formGroup]="signUpForm">
   <h2>Welcome on board!</h2>
   <p>We just need a little bit of data from you to get you started 🚀</p>
 
   <div class="control">
     <label for="email">Email</label>
-    <input id="email" type="email" name="email" />
+    <input id="email" type="email" name="email" formControlName="email"/>
   </div>
 
-  <div class="control-row">
+  <div class="control-row" formGroupName="pas">
     <div class="control">
       <label for="password">Password</label>
       <input
         id="password"
         type="password"
         name="password"
+        formControlName="password"
       />
     </div>
 
@@ -23,6 +24,7 @@
         id="confirm-password"
         type="password"
         name="confirm-password"
+        formControlName="confirmpassword"
       />
     </div>
   </div>
