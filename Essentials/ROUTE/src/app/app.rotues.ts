@@ -9,7 +9,7 @@ export const routes: Routes = [
     {path:'user/:userId', component:UserTasksComponent,
         children:[
             {path:'tasks', component: TasksComponent},
-            {path:'newTask', component: NewTaskComponent}
+            {path:'newTask', loadComponent:()=> import('./tasks/new-task/new-task.component').then((m)=>m.NewTaskComponent)}
         ]
     }
 ]
