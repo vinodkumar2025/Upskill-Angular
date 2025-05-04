@@ -1,0 +1,11 @@
+
+<p>card works!</p>
+@if(true){
+    @for (item of items; track $index) {
+        <!-- <ng-content select="card-header"></ng-content> -->
+         <ng-container *ngTemplateOutlet="cardheader">
+         </ng-container>
+    }
+}@else {
+    <ng-content select="h2"></ng-content>
+}
