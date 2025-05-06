@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeroComponent } from './hero/hero.component';
+import { AuthGuard } from './home/home.route.guard';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { HeroComponent } from './hero/hero.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

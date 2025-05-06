@@ -56,3 +56,7 @@
 // CanDeactivate: Prevents navigation away from a route (e.g., prompting for unsaved changes).
 // CanLoad: Prevents the loading of a lazy-loaded module (e.g., restricting access to a module).
 // Resolve: Pre-fetches data before activating a route (e.g., loading user data).
+
+// Use data to store metadata like page titles, breadcrumbs, or access roles.
+// Access data in components to customize rendering or behavior.
+// Combine with guards or resolvers for dynamic and static data management.
