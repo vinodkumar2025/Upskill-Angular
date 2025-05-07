@@ -1,0 +1,24 @@
+<form #loginForm="ngForm" (ngSubmit)="onFormSubmit(loginForm)" class="login-form">
+  <label>
+    <span >UserName</span>
+    <input type="text" name="userName" [(ngModel)]="formData.username" required/>
+    <p *ngIf="loginForm.form.controls['userName'].touched && loginForm.controls['userName'].invalid">
+      Please enter a valide user name
+    </p>
+  </label>
+
+  <label>
+    Password
+    <input type="password" name="password" [(ngModel)]="formData.password" required #password="ngModel"/>
+    <p *ngIf="password.touched && password.invalid">Please enter a valid password</p>
+  </label>
+
+  <label>
+    Gender
+    <select name="gender" [(ngModel)]="formData.gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+  </label>
+  <button type="submit" [disabled]="loginForm.invalid">Submit</button>
+</form>
