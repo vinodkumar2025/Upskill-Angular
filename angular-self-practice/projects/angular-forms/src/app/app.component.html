@@ -1,4 +1,4 @@
-<form #loginForm="ngForm" (ngSubmit)="onFormSubmit(loginForm)" class="login-form">
+<!-- <form #loginForm="ngForm" (ngSubmit)="onFormSubmit(loginForm)" class="login-form">
   <label>
     <span >UserName</span>
     <input type="text" name="userName" [(ngModel)]="formData.username" required/>
@@ -21,4 +21,5 @@
     </select>
   </label>
   <button type="submit" [disabled]="loginForm.invalid">Submit</button>
-</form>
+</form> -->
+<router-outlet></router-outlet>

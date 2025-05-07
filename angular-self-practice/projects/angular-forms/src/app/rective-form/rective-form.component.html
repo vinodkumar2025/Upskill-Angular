@@ -1,0 +1,20 @@
+<form [formGroup]="studentForm" (ngSubmit)="formsubmit()" class="student-form">
+    <label>
+      Id:
+      <input type="number" formControlName="id">
+    </label>
+    <label>
+      Name:
+      <input type="text" formControlName="name">
+    </label>
+    <label>
+      Branch:
+      <input type="text" formControlName="branch">
+    </label>
+    <label>
+      Marks:
+      <input type="number" formControlName="marks">
+    </label>
+    <button type="submit">Submit</button>
+  </form>
+  
