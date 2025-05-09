@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BehaviorSubject, Observable, ReplaySubject, Subject } from 'rxjs';
+import { BehaviorSubject, fromEvent, interval, mergeMap, Observable, ReplaySubject, Subject, switchMap, take } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +7,7 @@ import { BehaviorSubject, Observable, ReplaySubject, Subject } from 'rxjs';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+numberValue!:number;
  //Observables and subjects
 //   student$: Observable<any>= new Observable((subscriber)=>{
 //     subscriber.next('vinod'),
@@ -39,4 +40,17 @@ export class AppComponent {
 //       complete:()=>console.log('complated')      
 //     })
 //   }
+
+constructor(){
+  // interval(2000).pipe(
+  //   switchMap((x)=>interval(500))
+  // ).subscribe((v)=>this.numberValue = v);
+  // fromEvent(document,'click').pipe(
+  //   switchMap(()=>interval(100))
+  // ).subscribe((v)=>this.numberValue=v)
+  // interval(1000).pipe(
+  //   mergeMap(val => interval(500).pipe(take(3)))
+  // ).subscribe(console.log);
+}
+
 }
