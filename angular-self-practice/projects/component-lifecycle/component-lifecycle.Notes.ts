@@ -71,3 +71,11 @@
 // - Called before component is removed from DOM.
 // - For cleanup (e.g., unsubscribe Observables, clear timers).
 // 🔸 Order: Child ngOnDestroy → Parent ngOnDestroy (if destroyed, e.g., *ngIf)
+
+
+// ChangeDetectionStrategy : onPush
+// It is a change detection strategy in Angular that optimizes performance by reducing automatic change detection cycles.
+// 1. Input Reference Change: When an @Input property's reference changes (not when its contents are mutated).
+// 2. Event Handlers: When a DOM event (e.g., click, keyup) occurs in the component or its children.
+// 3. Async Pipe: When an Observable or Promise used with AsyncPipe emits a new value.
+// 4. Manual Trigger: When explicitly triggered via ChangeDetectorRef.detectChanges(), markForCheck(), or ApplicationRef.tick().
