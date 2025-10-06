@@ -1,0 +1,140 @@
+### JavaScript Interview Questions (Top 100)
+
+#### 1. Basics and Fundamentals
+
+1. What are the different data types in JavaScript?
+2. What is the difference between `var`, `let`, and `const`?
+3. Explain `==` vs `===`.
+4. What is hoisting in JavaScript?
+5. What are truthy and falsy values?
+6. Explain the difference between `undefined` and `null`.
+7. What is the `typeof` operator and how does it work?
+8. What are template literals?
+9. How do JavaScript primitive types differ from reference types?
+10. How does type coercion work in JavaScript?
+
+#### 2. Functions and Scope
+
+11. What is the difference between function declarations and expressions?
+12. Explain arrow functions and how they differ from regular functions.
+13. What is lexical scoping?
+14. What is a closure and how is it useful?
+15. What is the use of the `arguments` object?
+16. What is the difference between call, apply, and bind?
+17. What is IIFE (Immediately Invoked Function Expression)?
+18. What is a higher-order function?
+19. How does recursion work in JavaScript?
+20. What is memoization?
+
+#### 3. Objects and Arrays
+
+21. How do you create an object in JavaScript?
+22. What are object destructuring and array destructuring?
+23. What is the difference between `Object.assign()` and spread operator?
+24. How do you deep clone an object?
+25. How to iterate over object properties?
+26. What are array methods like `map`, `filter`, `reduce`, `forEach`?
+27. What is the difference between `splice()` and `slice()`?
+28. How to remove duplicates from an array?
+29. What is the difference between shallow and deep copy?
+30. What are rest parameters?
+
+#### 4. Prototypes and Inheritance
+
+31. What is prototypal inheritance?
+32. What is the prototype chain?
+33. What is the difference between `__proto__` and `prototype`?
+34. How does classical inheritance differ from prototypal inheritance?
+35. How does `Object.create()` work?
+
+#### 5. Asynchronous JavaScript
+
+36. What is the event loop?
+37. What are callbacks?
+38. What are Promises?
+39. What are async/await?
+40. How do you handle errors in async/await?
+41. What is a callback hell?
+42. What is the difference between microtasks and macrotasks?
+43. How does `Promise.all`, `Promise.race`, and `Promise.allSettled` work?
+44. How to chain promises?
+45. What is the use of `setTimeout` and `setInterval`?
+
+#### 6. ES6+ Features
+
+46. What are the new features in ES6?
+47. What are default parameters?
+48. What is destructuring assignment?
+49. What are template literals?
+50. What is the spread operator?
+51. What are arrow functions and their limitations?
+52. What is object shorthand?
+53. What are classes and how are they different from prototypes?
+54. What are static methods in classes?
+55. What are generators?
+
+#### 7. Error Handling
+
+56. What is the difference between `throw` and `try/catch`?
+57. What is the finally block used for?
+58. What are custom errors?
+59. How does `Promise.catch()` differ from `try/catch` in async functions?
+60. What is the global error handler in JavaScript?
+
+#### 8. DOM and Events
+
+61. What is the DOM?
+62. How do you select DOM elements?
+63. How to add/remove event listeners?
+64. What is event delegation?
+65. What is the difference between event bubbling and capturing?
+66. What are synthetic events?
+67. What is the difference between `innerText`, `textContent`, and `innerHTML`?
+68. How to prevent default behavior in events?
+69. What is the difference between `document.onload` and `DOMContentLoaded`?
+70. How do you create and dispatch custom events?
+
+#### 9. Modules and Tooling
+
+71. What is the difference between CommonJS and ES Modules?
+72. How do `import` and `export` work?
+73. What is tree shaking?
+74. What is bundling and why is it needed?
+75. What are transpilers like Babel?
+
+#### 10. Advanced Concepts
+
+76. What is `this` in JavaScript?
+77. What are the rules for determining `this`?
+78. How do arrow functions affect `this`?
+79. What is currying in JavaScript?
+80. What is throttling and debouncing?
+81. What are WeakMap and WeakSet?
+82. What is the purpose of Symbol?
+83. What are tagged template literals?
+84. What is the Reflect API?
+85. What is Proxy in JavaScript?
+
+#### 11. Memory and Performance
+
+86. What causes memory leaks in JavaScript?
+87. How to optimize performance in JavaScript applications?
+88. What are garbage collection and its strategies?
+89. How to profile memory usage in JavaScript?
+90. What is reflow and repaint in the browser?
+
+#### 12. Security
+
+91. What is Cross-Site Scripting (XSS)?
+92. What is the same-origin policy?
+93. What is CORS?
+94. How do you prevent XSS in JavaScript?
+95. What is Content Security Policy (CSP)?
+
+#### 13. Miscellaneous
+
+96. What is strict mode in JavaScript?
+97. What is a service worker?
+98. What is the difference between cookies, localStorage, and sessionStorage?
+99. What are JavaScript engines and how do they work?
+100. What are polyfills?
