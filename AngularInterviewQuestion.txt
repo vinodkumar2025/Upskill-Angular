@@ -1,0 +1,88 @@
+1. What is Angular?
+=> Angular is a typescript based frontend framework developed and maintained by google. it is used to build scalable and maintainable single page applications.
+
+2. What are advantages of angular?
+=>1. it is simple to build spa applications using components
+  2. To make flexible and structured applications
+  3. it is cross platform and open source
+  4. reusable code(services)
+  5. Testability(spec.ts)
+
+3. What is the difference between angular and angular JS?
+=> Angular JS:
+	=> it only supports js
+	=> this framework has a mvc architecture
+	=> it does not have CLI tool
+	=> it does not use DI
+	=> it does not support mobile browsers
+	=> it is not so fast
+=> Angular:
+	=> it supports both ts and js
+	=> this framework has a component based architecture
+	=> it has cli tool
+	=> it uses DI
+	=> it also supports mobile browsers.
+	=> it is very fast
+
+4. What is NPM?
+=> NPM/Node package manager is an online repository from where you can get thousands of free libraries which can be used in your angular project.
+
+5. What is CLI tool?
+=> it is a command line interface by using it we can create projects and components automatically.
+
+6. What are component in angular?
+=> Components are the most basic UI building block of an Angular app.
+
+7. What is Selector and template?
+=> A selector is used to identify the component in a component tree.
+=> A template is a HTML view of an angular component.
+
+8. What is module in angular?
+=> Module is place where we can group related components, directives and pipes and services.
+
+9. How an angular app gets loaded and started?
+=> index.html -> main.ts -> app.module.ts -> app.component
+
+10. What is Bootstrappped Module & Bootstrappped Component?
+=> When the Angular web application will start then the first module launched is the bootstrapped module and same is true for the bootstrapped component also.
+
+11. What is data binding in angular?
+=> it is a way of communicate between you typescript code of your component and your html view.
+	=> string interpolation {{data}}
+	=> property binding [property] = "data"
+	=> event binding (event)="expression"
+	=> two way data binding [(ngModel)]="data"
+
+12. What is string interpolation in angular?
+=> it is a one way data binding technique that is used to transfer the data from a typescript code to an HTML template.
+
+13. What is Property binding in angular?
+=> it is a one way data binding technique that is used to transfer the data from a typescript code to an HTML template.
+
+14. What is Event binding in angular?
+=> Event binding is used to handle the events raised by the user actiokns like button click.
+
+15. What is Two way data binding in angular?
+=> it allows us to transfer data from component to view and view to component at the same time.
+
+16. What are directives? What are the types of directives?
+=> Directives are classes that add additional behavior to elements in your angular application.
+	=> structural directives (*ngIf, *ngFor, *ngSwitch) - it will add or remove elements from the dom
+	=> Attribute directives(ngClass, ngStyle)- it will change the appearance of an dom element
+	=> Compoenet directives
+	=> Custom directives
+
+17. What is *ngIf structural directive?
+=> ngIf directive is used to add or remove items based on the if condition.
+
+18. What is *ngFor structural directive?
+=> it is used to itarate list of items and then display them.
+
+19. What is *ngSwitch structural directive?
+=> it is used to display the template based on the condition.
+
+20. What is ngStyle Attribute directive?
+=> it is used to update the styles to the html elements. eg: [ngStyle]="{color:'red'}"
+
+21. Whast is ngClass Attribute directive?
+=> it is used to add or remove the class based on conditon. eg: [ngClass]="className"
