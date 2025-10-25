@@ -86,3 +86,110 @@
 
 21. Whast is ngClass Attribute directive?
 => it is used to add or remove the class based on conditon. eg: [ngClass]="className"
+
+22. What is decorator?
+=> Angular decorator store metadata about a class, method, or property.
+
+23. What are the types of decorator?
+=> Class Decorator: @NgModule, @Component, @Injectable, @Directive, @Pipe
+=> Property Decorators: @Input, @Output, @ContentChild, @ContentChildren, @ViewChild, @ViewChildren, @HostBinding
+=> Method Decorator: @HostListner
+=> Parameter Decorator: @Inject, @self
+
+24. What are Pipes? What are the types of Pipes & Parameterized Pipes?
+=> Pipes are simple functions which accept an input value and return a transformed value.
+	=> Built-in Pipe -> eg: lowercase, uppercase, data, currency, percentage, slice,
+	=> Custom Pipes
+=> When we pass any parameters to the pipe then it is called parameterized pipes. eg: <div>200 | currency: 'INR'</div>
+
+25. What is chaining Pipes?
+=> The chaining pipes use multiple pipes on a data input. eg: {{dob | date | uppercase}}
+
+26. Explain Services with Example?
+=> A service is a typescript class it contains the reusable code which can be used across the application.
+=> Service can be implemented by using DI.
+
+27. How to Create a service in angular?
+=> by using ng g service service-name
+
+28. How to use Dependency injector with services in angular?
+=> by using constructor or inject method
+
+29. What is Hierarchical Dependency Injection?
+=> When we inject service using providers to the parent component then it is available to all its child components as well. when we add the service in a module then it is available throughout the module. if a service register with ProviderIn: 'root' then it is available to the root level.
+
+30. What is Provider in Angular?
+=> A provider is a object declared inside the decorator which inform the angular that a particular service is available for injecting inside the components.
+
+31. What is the role of @injectable Decorator? How to Use one service inside another service?
+=> it makes service injectable
+
+32. What are lifecycle hooks in angular?
+=> A component from creation to destruction goes through several stages and these stages are the lifecycle hooks.
+=> The stages will cover activities like 
+	=> Component instantiating 
+	=> Rendering the component html view.
+	=> Creating the child component
+	=> Destroying the component
+
+33. What is the difference between constructor and ngOnInit?
+=> ngOnInit:
+	=> it is a angular lifecycle hook which signals the activation of the created component.
+	=> ngOnInit is called after onchanges lifecycle hook.
+=> constructor:
+	=> it is a typescript class that automatically gets called when the class is being instantiated.
+	=> constructor is called before any lifecycle hook
+
+34. What are Asynchronous operations?
+=> Observables are used to perform asynchronous operations and handle asynchronous data
+
+35. What is the difference between promise and observable?
+=> Observables:
+	=> Emit multiple values over a period of time. Also called streaming of data.
+	=> Are lazy they are not executed until we subscribe to them using the subscribe().
+	=> Have subscriptions that are cancellable using the unsubscribe().
+=> Promise:
+	=> Emit single value at a time.
+	=> Are not lazy execute immediately after creation.
+	=> Are not cancellable
+
+36. What is RxJS?
+=> RxJS is a javascript library that allow us to work with asynchrous data stream with help of observables.
+
+37. What is observable? How to implement observable?
+=> it is a stream of data which emits over a period of time.
+	=> myobsrvable = new observable(observer=>{
+		console.log("start");
+		observer.next("a")
+		observer.next("b")
+	})
+	=> myobsrvable.subscribe(data=>{
+		console.log(data);
+	})
+
+38. What is the role of HttpClient in angular?
+=> HttpClient is a built in service class available in angular.
+=> performs HTTP requests.
+=> eg: get, post, put, delete
+
+39. What is typescript? what are the adavanges over javascript?
+=> it is a superset of javascript and it is strongly typed. it has some additional features like custom types, generics, enums, interfaces.
+
+40. What is type annotation in ts?
+=> it is a assigning a variable or object a type which will show the compile time error if we assign the different type value.
+
+41. What are built in/primitive and user-defined/non-primitive types in typescript?
+=> Primitive types
+	=> string, number, boolean, void, null, undefined
+=> Non primitive types
+	=> Array, enum, classes, interfaces
+
+42. What is the any type in ts?
+=> When the variable is type of any then no typechecking will be done by compiler and the flexibility is there to do anything with the variable.
+
+43. What is enum type in angular?
+=> enum allows to define a set of named constants.
+
+44. What are Arrow function in ts?
+=>  Arrow function are the shorthand syntax for defining the anonymous function.
+=> let y= (a,b) => a*b;
