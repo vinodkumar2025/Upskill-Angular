@@ -1,25 +1,21 @@
-<!-- <form #loginForm="ngForm" (ngSubmit)="onFormSubmit(loginForm)" class="login-form">
-  <label>
-    <span >UserName</span>
-    <input type="text" name="userName" [(ngModel)]="formData.username" required/>
-    <p *ngIf="loginForm.form.controls['userName'].touched && loginForm.controls['userName'].invalid">
-      Please enter a valide user name
-    </p>
-  </label>
+<form #myForm="ngForm" (ngSubmit)="onSubmitClick(myForm)">
+  <div>
+    <label for="name">Name: </label>
+    <input type="text" name="name" [(ngModel)]="name" required minlength="10">
+  </div>
+    @if(myForm.controls['name']?.invalid && myForm.controls['name']?.touched) {
+  <div>Name is required.</div>
+}
 
-  <label>
-    Password
-    <input type="password" name="password" [(ngModel)]="formData.password" required #password="ngModel"/>
-    <p *ngIf="password.touched && password.invalid">Please enter a valid password</p>
-  </label>
-
-  <label>
-    Gender
-    <select name="gender" [(ngModel)]="formData.gender">
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-    </select>
-  </label>
-  <button type="submit" [disabled]="loginForm.invalid">Submit</button>
-</form> -->
+   <div>
+    <label for="password">Password: </label>
+    <input type="password" name="password" [(ngModel)]="password" required>
+  </div>
+  @if(myForm.controls['password']?.invalid && myForm.controls['password']?.touched) {
+  <div>Password is required.</div>
+}
+  <div>
+    <button type="submit">submit</button>
+  </div>
+</form>
 <router-outlet></router-outlet>

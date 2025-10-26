@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-rective-form',
@@ -18,7 +18,7 @@ export class RectiveFormComponent{
   studentForm!:FormGroup;
   constructor(private fb:FormBuilder){
     this.studentForm = this.fb.group({
-      id: [this.student.id],
+      id: new FormControl(this.student.id),
     name: [this.student.name],
     branch: [this.student.branch],
     marks: [this.student.marks]
