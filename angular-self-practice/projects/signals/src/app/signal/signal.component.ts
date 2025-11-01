@@ -5,22 +5,28 @@ import { Component, signal, effect } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './signal.component.html',
-  styleUrl: './signal.component.css'
+  styleUrls: ['./signal.component.css']
 })
 export class SignalComponent {
 
-  name = signal<string>("123");
-  tett = ''
+  name1 = signal<string>('test123');
+  tett = 'teest'
+  testarr = signal<number[]>([1,2,3])
 
   test(){
-    this.name.set('tt')
+    this.name1.set('tt')
+    this.name1.update(val=>val+'test')
+    
   }
 
-  ngOnInit() {
+  constructor(){
     // effect should be called inside constructor or ngOnInit
     effect(() => {
-      console.log(this.name());
+      console.log(this.name1());
     });
+  }
+  ngOnInit() {
+    
   }
 
 }
