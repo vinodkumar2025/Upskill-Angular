@@ -1,2 +1,4 @@
-<p *RemoveDom="true">dom not removed</p>
-<p appHoverHighlight>hover to view color</p>
+<p *RemoveDom="buttonclicked">dom not removed</p>
+<button (click)="onButtonClick()">Click me</button>
+<button (click)="buttonclicked = false">Reset</button>
+<p appHoverHighlight [appHoverHighlight]="'green'">hover to view color</p>

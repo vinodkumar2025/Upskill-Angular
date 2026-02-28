@@ -69,7 +69,7 @@
 => Directives are classes that add additional behavior to elements in your angular application.
 	=> structural directives (*ngIf, *ngFor, *ngSwitch) - it will add or remove elements from the dom
 	=> Attribute directives(ngClass, ngStyle)- it will change the appearance of an dom element
-	=> Compoenet directives
+	=> Component directives
 	=> Custom directives
 
 17. What is *ngIf structural directive?

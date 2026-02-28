@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EmployeeItemComponent } from '../employee-item/employee-item.component';
 
@@ -18,4 +18,7 @@ import { EmployeeItemComponent } from '../employee-item/employee-item.component'
 })
 export class EmployeeListComponent {
   @Input() employees!: { id: number; name: string }[];
+  ngOnChanges(changes: SimpleChanges) {
+  console.log('EmployeeListComponent: ngOnChanges called', changes);
+}
 }

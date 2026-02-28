@@ -25,6 +25,6 @@ export class EmployeeItemComponent {
 
   changeName() {
     this.employee.name += ' 👀';
-    // this.cdr.markForCheck(); // uncomment to manually trigger UI update
+    this.cdr.markForCheck(); // uncomment to manually trigger UI update
   }
 }

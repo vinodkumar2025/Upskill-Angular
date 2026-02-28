@@ -11,4 +11,9 @@ import { HoverHighlightDirective } from './attribute.directive';
 })
 export class AppComponent {
   title = 'create-directives';
+  buttonclicked = false;
+
+  onButtonClick() {
+    this.buttonclicked = true;
+  }
 }

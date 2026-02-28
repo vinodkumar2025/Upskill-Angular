@@ -5,7 +5,6 @@
 // - <ng-content>: The basic mechanism for content projection.
 // - select="...": Use the select attribute to filter content based on tag, class, or attribute.
 // - ngProjectAs: Assign a custom selector to an element for projection.
-// - @ContentChild and @ContentChildren: Access projected content from the parent component.
 // - ng-template and ngTemplateOutlet: For dynamically rendering content with context.
 // - Multiple <ng-content>: Project content to different areas of the child component.
 // - Default Slot: Content that does not match any specific <ng-content select="..."> will go into the default slot.
