@@ -1,0 +1,20 @@
+<div class="text-center">
+  <h2 class="text-center text-primary">Welcome to Angular with NgRx!</h2>
+  <hr>
+  <h2>App Counter: {{ counter$ | async }}</h2>
+  <div class="d-flex justify-content-center gap-2">
+    <button class="btn btn-success mt-2" (click)="onIncrement()">Increment</button>
+    <button class="btn btn-warning mt-2" (click)="onDecrement()">Decrement</button>
+    <button class="btn btn-secondary mt-2" (click)="onReset()">Reset</button>
+  </div>
+  <hr>
+  <app-custom-counter></app-custom-counter>
+  <hr>
+  <div class="row">
+    <div class="col-6">
+      <app-user></app-user>
+    </div>
+    <div class="col-6">
+      <app-admin></app-admin>
+  </div>
+</div>

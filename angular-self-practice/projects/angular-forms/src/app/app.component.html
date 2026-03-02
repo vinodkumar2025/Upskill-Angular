@@ -1,21 +1,25 @@
-<form #myForm="ngForm" (ngSubmit)="onSubmitClick(myForm)">
+<!-- <form #myForm="ngForm" (ngSubmit)="onSubmitClick(myForm)">
   <div>
     <label for="name">Name: </label>
     <input type="text" name="name" [(ngModel)]="name" required minlength="10">
+  </div> -->
+  <!-- name validation messages -->
+  <!-- <div *ngIf="myForm.controls['name']?.touched && myForm.controls['name']?.invalid">
+    <div *ngIf="myForm.controls['name']?.errors?.['required']">Name is required.</div>
+    <div *ngIf="myForm.controls['name']?.errors?.['minlength']">Name should be at least 10 characters.</div>
   </div>
-    @if(myForm.controls['name']?.invalid && myForm.controls['name']?.touched) {
-  <div>Name is required.</div>
-}
 
    <div>
     <label for="password">Password: </label>
     <input type="password" name="password" [(ngModel)]="password" required>
   </div>
-  @if(myForm.controls['password']?.invalid && myForm.controls['password']?.touched) {
-  <div>Password is required.</div>
-}
+  <div *ngIf="myForm.controls['password']?.touched && myForm.controls['password']?.errors?.['required']">
+    Password is required.
+  </div>
   <div>
     <button type="submit">submit</button>
   </div>
-</form>
+</form> -->
+<button routerLink="/reactive">Reactive Form</button>
+<button routerLink="/template">Template Driven Form</button>
 <router-outlet></router-outlet>

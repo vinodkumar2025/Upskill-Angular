@@ -19,7 +19,7 @@ export class AppComponent {
     if(form.valid){
       console.log(form.value  )
     }
-    // form.reset()
+    form.reset()
 
   }
 }

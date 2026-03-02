@@ -6,6 +6,12 @@
     <label>
       Name:
       <input type="text" formControlName="name">
+      @if(studentForm.controls['name']?.errors?.['noSpace'] && studentForm.controls['name']?.touched) {
+        <div>Name should not contain spaces.</div>
+      }
+      @if(studentForm.controls['name']?.errors?.['pattern']) {
+                <div>Name should contain only alphabets.</div>
+            }
     </label>
     <label>
       Branch:

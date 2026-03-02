@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-rective-form',
@@ -19,7 +19,7 @@ export class RectiveFormComponent{
   constructor(private fb:FormBuilder){
     this.studentForm = this.fb.group({
       id: new FormControl(this.student.id),
-    name: [this.student.name],
+    name: [this.student.name,[Validators.required,this.noSpaceValidator,Validators.pattern('^[a-zA-Z]+$')]],
     branch: [this.student.branch],
     marks: [this.student.marks]
     })
@@ -27,6 +27,14 @@ export class RectiveFormComponent{
 
   formsubmit(){
     console.log(this.studentForm)
+  }
+
+  noSpaceValidator(control:AbstractControl){
+    if(control.value && control.value.includes(' ')){
+      return {noSpace:true}
+    } else {
+      return null;
+    }
   }
 }
 
