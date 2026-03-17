@@ -117,7 +117,6 @@ Angular is a full-featured MVC framework with built-in routing, state management
 18. what is the use of environment.ts file?
 The environment.ts file stores environment-specific settings like API URLs or feature flags. Angular uses different versions (e.g., environment.prod.ts) to configure the app for development, production, or testing during build time.
 19. What is a component in Angular, and how is it defined?
-
 A component controls a part of the UI. It’s defined using the @Component decorator, which specifies the selector, template, and styles. The component class contains the logic and data binding for the view.
 20. What is the @Component decorator, and what are its key properties?
  The @Component decorator marks a class as an Angular component and provides metadata. Key properties include:
