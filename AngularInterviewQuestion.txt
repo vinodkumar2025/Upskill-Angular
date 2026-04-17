@@ -60,7 +60,7 @@
 => it is a one way data binding technique that is used to transfer the data from a typescript code to an HTML template.
 
 14. What is Event binding in angular?
-=> Event binding is used to handle the events raised by the user actiokns like button click.
+=> Event binding is used to handle the events raised by the user actions like button click.
 
 15. What is Two way data binding in angular?
 => it allows us to transfer data from component to view and view to component at the same time.
